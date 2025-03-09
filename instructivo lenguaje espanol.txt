@@ -1,0 +1,45 @@
+simbolos de ANTLR4=
+
+* muchas veces
+? una vez o ninguna
+~ cualquier caracter excepto
+
+": Comilla doble (el delimitador de cadenas).
+
+\r: Retorno de carro (carácter de salto de línea en Windows).
+
+\n: Nueva línea (carácter de salto de línea en Unix/Linux).
+
+ESTE ES UN LENGUAJE IGUAL A C++ PERMITE HACER WHILE, FOR, IF, IF ELSE, LEER (CIN), IMPRIMIR
+ADMITE TAMBIEN CADENAS DE CARACTERES E IGNORA LOS ESPACIOS 
+EN ESTE LENGUAJE NO SE ADMITE PONER COMILLAS EN UNA CADENA DE CARACTERES
+
+PASOS PARA PROBARLO
+
+1. INSTALAR EL JAR DE ANTLR
+REQUISITOS: TENER JDK 21
+
+2. AGREGAR UNA CARPETA AL DIJSCO LOCAL LLAMADA; Javalib
+
+3. ABRIR CMD Y ESCRIBIR LAS SIGUIENTES LINEAS:
+
+SET CLASSPATH=.;C:\Javalib\antlr-4.13.2-complete.jar;%CLASSPATH%
+
+doskey antlr4=java org.antlr.v4.Tool $*
+
+doskey grun =java org.antlr.v4.gui.TestRig $*
+
+4. PARA COMPROBAR INSTALACION CORRECTA PEGUE ESTO:
+
+java org.antlr.v4.Tool
+
+5. PARA CORRERLO SIGA ESTOS PASOS:
+	1. CREE UNA CARPETA EN DOCUMENTOS Y LLAMELA LENGUAJE, DENTRO DE ESA CARPETA GUARDE EL ARCHIVO LLAMADO LenguajeEspanol.g4
+	2. EN EL CMD ENTRE A ESA CARPETA Y ESCRIBA LOS SIGUIENTES COMANDOS
+		antlr4 LenguajeEspanol.g4
+		javac LenguajeEspanol*.java
+		grun LenguajeEspanol gramatica -gui
+		entero x = 10 + 5;
+		^Z
+	
+	automaticamente le aparecera el arbol
